@@ -1,0 +1,164 @@
+// color
+$white: hsl(0, 0%, 100%);
+$littleGray: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+$btnMediumBlue: hsl(213, 17%, 27%);
+$Orange: hsl(25, 97%, 53%);
+// font-size
+$pFontSize: 15px;
+
+*{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $VeryDarkBlue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    width: 30vw;
+    height: 30vw;
+    background-color: $DarkBlue;
+    border-radius: 30px;
+    a{
+        background-color: $btnMediumBlue;
+        border-radius: 50%;
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    h2{
+        color: $white;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    p{
+        color: $littleGray;
+    }
+    &.rateCard{
+        display: none;
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+                input{
+                    width: 4vw;
+                    height: 4vw;
+                    padding: 1rem;
+                    border-radius: 50%;
+                    border: none;
+                    color: $white;
+                    background-color: $btnMediumBlue;
+                    transition: all 0.25s ease;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $Orange;
+                        color: $white;
+                    }
+                }
+            }
+            button{
+                background-color: $Orange;
+                border-radius: 100px;
+                border: none;
+                padding: 0.7rem;
+                color: $white;
+                font-size: $pFontSize;
+                transition: all 0.25s ease;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $white;
+                    color: $Orange;
+                }
+            }
+        }
+    }
+    &.thankCard{
+        // display: none;
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+div.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 1100px) {
+    main{
+        width: 40vw;
+        height: 40vw;
+        &.rateCard{
+            a{
+                width: 6vw;
+                height: 6vw;
+            }
+            form{
+                div{
+                    input{
+                        width: 6vw;
+                        height: 6vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    main{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    main{
+        width: 90vw;
+        height: 90vw;
+        &.rateCard{
+            a{
+                width: 12vw;
+                height: 12vw;
+            }
+            form{
+                div{
+                    input{
+                        width: 12vw;
+                        height: 12vw;
+                    }
+                }
+            }
+        }
+    }
+}
