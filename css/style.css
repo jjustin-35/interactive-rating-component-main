@@ -42,8 +42,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5rem;
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   background-color: #252d37;
   border-radius: 30px;
 }
