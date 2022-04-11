@@ -28,14 +28,14 @@
     to help us improve our offering!
   </p>
   <form>
-    <div>
-      <input type="button" value="1"/>
-      <input type="button" value="2"/>
-      <input type="button" value="3"/>
-      <input type="button" value="4"/>
-      <input type="button" value="5"/>
+    <div id="ratingBtn">
+      <input type="button" value="1" id="1"/>
+      <input type="button" value="2" id="2"/>
+      <input type="button" value="3" id="3"/>
+      <input type="button" value="4" id="4"/>
+      <input type="button" value="5" id="5"/>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" id="submit">Submit</button>
   </form>
 </main>
   <!-- Rating state end -->
@@ -43,7 +43,7 @@
   <!-- Thank you state start -->
 <main class="thankCard">
   <img src="./images/illustration-thank-you.svg" alt="credit card">
-  <p>You selected <span></span> out of 5</p>
+  <p id="score">You selected <span></span> out of 5</p>
   <h2>Thank you!</h2>
   <p>
     We appreciate you taking the time to give a rating. If you ever need more support, 
@@ -59,4 +59,5 @@
     Coded by <a href="#">Justin Chen</a>.
   </div>
 </body>
+<script src="./DOM.js"></script>
 </html>
