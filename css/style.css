@@ -113,12 +113,6 @@ main.rateCard form div input {
   transition: all 0.25s ease;
 }
 
-main.rateCard form div input:hover {
-  cursor: pointer;
-  background-color: #fb7413;
-  color: white;
-}
-
 main.rateCard form button {
   background-color: #fb7413;
   border-radius: 100px;

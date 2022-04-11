@@ -1,7 +1,7 @@
 let ratingBtn = document.querySelectorAll('div#ratingBtn input')
 let scoreBoard = document.querySelector('p#score span')
 
-// 先處理mouseover
+// 1. mouseover
 ratingBtn.forEach((element, i) => {
     element.addEventListener('mouseover', () => {
         // reset star
@@ -19,14 +19,14 @@ ratingBtn.forEach((element, i) => {
     })
 
     let index;
-    // click
+    //2. click
     element.addEventListener('click', () => {
         index = i;
         let score = index + 1;
         scoreBoard.innerHTML = score;
     })
 
-    // mouseout
+    //3. mouseout
     element.addEventListener('mouseout', () => {
         ratingBtn.forEach((elem) => {
             elem.style = '';

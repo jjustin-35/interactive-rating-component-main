@@ -78,11 +78,6 @@ main{
                     color: $white;
                     background-color: $btnMediumBlue;
                     transition: all 0.25s ease;
-                    &:hover{
-                        cursor: pointer;
-                        background-color: $Orange;
-                        color: $white;
-                    }
                 }
             }
             button{
